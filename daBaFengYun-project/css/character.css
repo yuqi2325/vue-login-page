@@ -1,0 +1,168 @@
+/* character.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.character-page {
+  background: #08090d;
+  min-height: 100vh;
+  color: #fff;
+  font-family: sans-serif;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 24px 6%;
+  background: rgba(10, 12, 18, 0.85);
+  backdrop-filter: blur(20px);
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  opacity: 0;
+}
+
+.logo {
+  font-size: 22px;
+  color: #00ccff;
+  font-weight: bold;
+}
+
+.nav-btns button {
+  background: none;
+  border: none;
+  color: #eee;
+  font-size: 16px;
+  margin-left: 24px;
+  cursor: pointer;
+}
+
+.nav-btns button:hover {
+  color: #00ccff;
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero h1 {
+  font-size: 50px;
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 100px 20px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 32px;
+  color: #00ccff;
+  margin-bottom: 60px;
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 32px;
+}
+
+.card {
+  background: #12141c;
+  border-radius: 20px;
+  overflow: hidden;
+  cursor: pointer;
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+.card img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  transition: 0.5s;
+}
+
+.card:hover img {
+  transform: scale(1.06);
+}
+
+.info {
+  padding: 22px;
+}
+
+.name {
+  font-size: 20px;
+  margin-bottom: 6px;
+}
+
+.role {
+  color: #aaa;
+  font-size: 14px;
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+  padding: 20px;
+}
+
+.modal-box {
+  max-width: 750px;
+  width: 100%;
+  background: #141620;
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.modal-box img {
+  width: 100%;
+  height: 460px;
+  object-fit: cover;
+}
+
+.modal-text {
+  padding: 36px;
+}
+
+.modal-name {
+  font-size: 30px;
+  color: #00ccff;
+  margin-bottom: 10px;
+}
+
+.modal-role {
+  color: #ccc;
+  margin-bottom: 20px;
+}
+
+.modal-desc {
+  color: #aaa;
+  line-height: 1.8;
+}
+
+.close-btn {
+  margin-top: 24px;
+  padding: 14px 26px;
+  background: #00ccff;
+  border: none;
+  border-radius: 12px;
+  font-weight: bold;
+  cursor: pointer;
+}

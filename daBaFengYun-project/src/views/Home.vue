@@ -43,7 +43,7 @@ const handleLogout = () => {
   width: 100%;
   height: 100%;
   /* 替换为你的背景图 */
-  background-image: url('@/assets/home-bg.jpg');
+  background-image: url('/assets/home-bg.jpg');
   background-size: cover;
   background-position: center;
   display: flex;
